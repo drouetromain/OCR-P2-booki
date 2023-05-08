@@ -17,12 +17,12 @@
 
 <body>
     <header>
-        <div id="logo"><img src="./images/logo/Booki.png" alt="logo"></img></div>
+        <div id="logo"><img src="./images/logo/Booki.png" alt="logo"></div>
         
         <nav class="nav">
             <ul class="menu">
-                <li class="nav-links"><a href="#" alt="Lien vers les hébergements">Hébergements</a></li>
-                <li class="nav-links"><a href="#" alt="Lien vers des activités">Activités</a></li>
+                <li class="nav-links"><a href="#" target="_self">Hébergements</a></li>
+                <li class="nav-links"><a href="#" target="_self">Activités</a></li>
             </ul>
         </nav>
     </header>
@@ -30,17 +30,25 @@
         
         <main>
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-            <div>En plein centre-ville ou en pleine nature</div>
-            <form>
-                <img></img>
-            </form>
+            <div class="h1-subtitle">En plein centre-ville ou en pleine nature</div>
+            <div class="search-bar">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <form action="#" method="get" class="search-form">
+                    <div class="search-town">
+                        <input type="text" name="name" id="name" value="Marseille, France">
+                    </div>
+                    <div class="search-submit">
+                        <input type="submit" value="Rechercher">
+                      </div>
+                </form>
+            </div>
             <div class="filters-nav">
                 <div>Filtres</div>
                 <ul class="facet-list">
-                    <li class="facet-details"><i class="facet-icon fa-sharp fa-solid fa-money-bill-wave"></i><a href="#" alt="">Économique</a></li>
-                    <li class="facet-details"><i class="facet-icon fa-solid fa-person"></i><a href="#" alt="">Familial</a></li>
-                    <li class="facet-details"><i class="facet-icon fa-solid fa-heart"></i><a href="#" alt="">Romantique</a></li>
-                    <li class="facet-details"><i class="facet-icon fa-solid fa-fire"></i><a href="#" alt="">Nos pépites</a></li>
+                    <li class="facet-details"><i class="facet-icon fa-sharp fa-solid fa-money-bill-wave"></i><a href="#" target="_self">Économique</a></li>
+                    <li class="facet-details"><i class="facet-icon fa-solid fa-person"></i><a href="#" target="_self">Familial</a></li>
+                    <li class="facet-details"><i class="facet-icon fa-solid fa-heart"></i><a href="#" target="_self">Romantique</a></li>
+                    <li class="facet-details"><i class="facet-icon fa-solid fa-fire"></i><a href="#" target="_self">Nos pépites</a></li>
                 </ul>
             </div>
             <div class="accommodation-info">
@@ -216,8 +224,73 @@
                     </div>
                 </section>
             </div>
+            <div class="activities-block">
+                <section class="activities">
+                    <div class="activities-title">
+                        <h2 class="section-title">Activités à Marseille</h2>
+                    </div>
+                        <div class="activities-cards">
+                            <article class="card">
+                                <img src="./images/activites/reno-laithienne.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Vieux-Port</h3>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="card">
+                                <img src="./images/activites/paul-hermann.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Fort de Pomègues</h3>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="card">
+                                <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Parc national des Calanques</h3>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="card">
+                                <img src="./images/activites/florian-wehde.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                </section>
+            </div>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="footer-column">
+                <div class="footer-title">A propos</div>
+                <ul>
+                    <li><a href="#" target="_self">Fonctionnement du site</a></li>
+                    <li><a href="#" target="_self">Conditions générales</a></li>
+                    <li><a href="#" target="_self">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <div class="footer-title">Nos hébergements</div>
+                <ul>
+                <li><a href="#" target="_self">Charte qualité</a></li>
+                <li><a href="#" target="_self">Proposer votre hôtel</a></li>  
+                </ul>
+               
+            </div>
+            <div class="footer-column">
+                <div class="footer-title">Assistance</div>
+                <ul>
+                <li><a href="#" target="_self">Centre d'aide</a></li>
+                <li><a href="#" target="_self">Nous contacter</a></li>    
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 
